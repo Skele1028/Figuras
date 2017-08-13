@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="372.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="control.FXMLDocumentController">
+   <children>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Circulo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#CrearCirculoBt" text="Crear Circulo" />
+                  <MenuItem mnemonicParsing="false" onAction="#PintarCirculoBt" text="Rellenar Circulo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Cuadrado">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#CrearCuadradoBt" text="Crear Cuadrado" />
+                  <MenuItem mnemonicParsing="false" onAction="#PintarCuadradoBt" text="Rellenar Cuadrado" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Triangulo">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#CrearTrianguloBt" text="Crear Triangulo" />
+                  <MenuItem mnemonicParsing="false" onAction="#PintarTrianguloBt" text="Rellenar Triangulo" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Linea">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#CrearLineaBt" text="CrearLinea" />
+                  <MenuItem mnemonicParsing="false" onAction="#PintarColorBt" text="Cambiar de Color" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Canvas fx:id="canva2" height="312.0" layoutX="14.0" layoutY="47.0" width="343.0" />
+   </children>
+</AnchorPane>
